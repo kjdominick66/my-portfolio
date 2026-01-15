@@ -1,0 +1,27 @@
+.navbar {
+    align-items: center;
+    width: 500px;
+    margin-left: 10%;
+    background-color: rgb(203, 255, 243);
+    font-size: xx-large;
+    height: min-content;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar span {
+  color: rgb(0, 0, 0);
+  font-size: xx-large
+}
+
+.navbar span:hover {
+  color: #00bfff;
+}
+
+.navbar span.active {
+  border-bottom: 2px solid #00bfff;
+}
