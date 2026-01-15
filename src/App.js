@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter, Routes, Route, Link} from 'react-router-dom';
+import Home from './pages/home';
+import About from './pages/about';
+import Projects from './pages/projects';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hi, I'm Keenan! This is my website, and it's time I start coding it!
-        </p>
-        <a
-          className="App-link"
-          href="https://github.com/kjdominick66"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Check Out My Github!
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+    function Navbar(){
+      return(
+        <nav>
+          
+        </nav>
+      );
+    }
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/" element={<About />} />
+        <Route path="/" element={<Projects />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
