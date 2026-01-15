@@ -1,20 +1,20 @@
-import {BrowserRouter, Routes, Route, Link} from 'react-router-dom';
-import Home from './pages/home';
-import About from './pages/about';
-import Projects from './pages/projects';
+import {Routes, Route} from 'react-router-dom';
+import Home from './pages/Home'
+import About from './pages/About';
+import Projects from './pages/Projects';
 import Layout from './pages/Layout';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/" element={<About />} />
-          <Route path="/" element={<Projects />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="projects" element={<Projects />} />
+        <Route path="*" element={<NotFound />} />
+      </Route>
+    </Routes>
   );
 }
 
