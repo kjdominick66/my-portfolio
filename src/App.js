@@ -6,17 +6,12 @@ import Projects from './pages/projects';
 function App() {
   return (
     <BrowserRouter>
-    function Navbar(){
-      return(
-        <nav>
-          
-        </nav>
-      );
-    }
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/" element={<About />} />
-        <Route path="/" element={<Projects />} />
+        <Route path="/" element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/" element={<About />} />
+          <Route path="/" element={<Projects />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );

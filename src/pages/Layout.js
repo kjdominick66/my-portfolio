@@ -6,8 +6,11 @@ function Layout(){
             <nav>
                 <Link to="/Home">Home</Link>
                 <Link to="/About">About Me</Link>
-                <Link to=""
+                <Link to="/Projects">Projects</Link>
             </nav>
+            {}
+            <Outlet />
         </>
     );
 }
+export default Layout;
