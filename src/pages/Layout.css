@@ -2,7 +2,7 @@
     align-items: center;
     width: 500px;
     margin-left: 10%;
-    background-color: rgb(203, 255, 243);
+    background-color: rgb(97, 97, 97);
     font-size: xx-large;
     height: min-content;
 }
@@ -13,15 +13,12 @@
     gap: 30px;
 }
 
-.navbar span {
-  color: rgb(0, 0, 0);
-  font-size: xx-large
+.navbar a {
+  color: gainsboro;
+  text-decoration: none;
 }
 
-.navbar span:hover {
-  color: #00bfff;
-}
-
-.navbar span.active {
-  border-bottom: 2px solid #00bfff;
+.navbar a:active, a:hover, a:visited {
+  color: rgba(220, 220, 220, 0.715);
+  text-decoration: none;
 }
