@@ -11,12 +11,14 @@
 .navbar ul {
   list-style-type: none;
   display: flex;
+  justify-content: center;
   gap: 40px;
 }
 
 .navbar a {
   color: gainsboro;
   text-decoration: none;
+  pointer-events: auto
 }
 
 .navbar a:active, a:hover, a:visited {

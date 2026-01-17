@@ -3,14 +3,27 @@ body {
 }
 
 
+
 .home-container h1 {
     text-align: left;
     color: rgb(221, 221, 221);
     font-size: xx-large;
-
+    max-width: fit-content;
 }
 
-.home-container .mountainimg {
-    height: 20%;
-    width: 20%;
+.home-container .image-container {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    position: relative;
+    left: 50%;
+    top: 100px;
 }
+
+.home-container .image-container .mountainimg {
+    height: 60%;
+    width: 50%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
