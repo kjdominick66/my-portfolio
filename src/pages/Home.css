@@ -1,7 +1,11 @@
+body {
+    background-color: rgb(21, 21, 21);
+}
+
+
 .home-container h1 {
     text-align: left;
-    color: rgb(0, 0, 0);
+    color: rgb(221, 221, 221);
     font-size: xx-large;
-    position: relative;
-    bottom: 50px;
+
 }

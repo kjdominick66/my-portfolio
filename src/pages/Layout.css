@@ -1,16 +1,17 @@
 .navbar {
-    align-items: center;
-    width: 500px;
-    margin-left: 10%;
-    background-color: rgb(97, 97, 97);
-    font-size: xx-large;
-    height: min-content;
+  position: absolute;
+  top: 0px;
+  width: 50%;
+  margin-left: 25%;
+  background-color: rgb(97, 97, 97);
+  font-size: 200%;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .navbar ul {
-    list-style-type: none;
-    display: flex;
-    gap: 30px;
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
 }
 
 .navbar a {
