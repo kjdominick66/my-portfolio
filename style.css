@@ -1,3 +1,10 @@
 body {
-    background-color: darkslategrey;
+    background-color: ghostwhite;
+    color: black;
+}
+
+/* Dark Mode Styles */
+body.dark {
+    background-color: darkslategray;
+    color: ivory;
 }
