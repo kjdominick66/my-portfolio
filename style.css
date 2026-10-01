@@ -3,6 +3,17 @@ body {
     color: #6f5643;
 }
 
+nav {
+    background-color: #cc6b49;
+    padding: 15px 20px;
+    margin-top: ;
+    max-width: fit-content;
+}
+
+nav a {
+    padding: 15px;
+}
+
 h1 {
     background: linear-gradient(to right, #6f5643 44.4%, #cc6b49 55.6%);
     background-clip: text;
@@ -10,11 +21,7 @@ h1 {
     -webkit-text-fill-color: transparent;
 }
 
-ul.nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+
 
 /* Dark Mode Styles */
 body.dark {
