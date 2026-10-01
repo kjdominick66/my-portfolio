@@ -1,24 +1,38 @@
+@font-face {
+    font-family: fiftiesmovies;
+    src: url(assets/fiftiesmovies.ttf);
+}
+
 body {
     background-color: #ece6c2;
     color: #6f5643;
+    margin: 30px;
+}
+
+.topbar {
+    display: flex;
 }
 
 nav {
-    background-color: #cc6b49;
     padding: 15px 20px;
-    margin-top: ;
     max-width: fit-content;
 }
 
 nav a {
     padding: 15px;
+    font-family: fiftiesmovies;
+    font-size: x-large;
+    font-weight: bold;
+    text-decoration: none;
+    color: #cc6b49;
 }
 
-h1 {
+.topbar h1 {
     background: linear-gradient(to right, #6f5643 44.4%, #cc6b49 55.6%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 45px;
 }
 
 
