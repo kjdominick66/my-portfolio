@@ -44,10 +44,9 @@ nav a {
 
 .content {
     /* Used for viewing purposes */
-    margin-top: 5vh;
+    margin-top: 8vh;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: 3fr 2fr;
 }
 
 /* Introduction and Picture */
@@ -55,7 +54,9 @@ nav a {
 .description {
     display: flex;
     flex-direction: column;
-    gap: 8px
+    gap: 8px;
+    padding-left: 20vw;
+    justify-content: center;
 }
 
 .description .name {
@@ -71,15 +72,11 @@ nav a {
     width: 35vw;
 }
 
-.photo {
-    grid-column: auto;
-    grid-row: span 6 / span 6;
-}
-
 .photo img {
     max-width: 100%;
     height: auto;
     width: 20vw;
+    border-radius: 50%;
 }
 
 /* Dark Mode Styles */
@@ -94,8 +91,49 @@ body.dark {
     }
 
     .topbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+
+    .content {
+        margin-top: 5vh;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding-left: 5vw;
+    }
+
+    .description .name {
+        font-size: 2rem;
+    }
+
+    .description .title {
+        font-size: 1.5rem;
+        font-style: italic;
+    }
+
+    .description .about {
+        width: 100%;
+    }
+
+    .photo {
+        padding-left: 5vw;
+    }
+
+    .photo img {
+        max-width: 100%;
+        height: auto;
+        width: 50vw;
+        border-radius: 50%;
+    }
+
+
+
+
 }
