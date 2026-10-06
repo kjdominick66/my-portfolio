@@ -32,6 +32,12 @@ nav a {
     color: #4e3b2b;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    width: 20vw;
+}
+
 .header {
     color:#562717;
     text-align: center;
