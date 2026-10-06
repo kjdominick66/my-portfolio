@@ -1,22 +1,24 @@
+/* Fonts */
 @font-face {
     font-family: fiftiesmovies;
     src: url(assets/fiftiesmovies.ttf);
 }
 
+/* Full Page */
 body {
     background-color: #fddca9;
     color: #562717;
     margin: 2vw;
+    
 }
 
-.innerbody {
-    background-color: #ce4a1c;
-}
+/* Top Nav/Name Bar */
 
 .topbar {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #ce4a1c;
 }
 
 nav {
@@ -32,16 +34,52 @@ nav a {
     color: #4e3b2b;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    width: 20vw;
-}
-
 .header {
     color:#562717;
     text-align: center;
     font-size: 2rem;
+}
+
+/* Content */
+
+.content {
+    /* Used for viewing purposes */
+    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+/* Introduction and Picture */
+
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.description .name {
+    font-size: 2rem;
+}
+
+.description .title {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.description .about {
+    width: 35vw;
+}
+
+.photo {
+    grid-column: auto;
+    grid-row: span 6 / span 6;
+}
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+    width: 20vw;
 }
 
 /* Dark Mode Styles */
