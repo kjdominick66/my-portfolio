@@ -4,40 +4,56 @@
     src: url(assets/fiftiesmovies.ttf);
 }
 
+@font-face {
+    font-family: amsterdamfour;
+    src: url(assets/amsterdamfour.ttf);
+}
+
 /* Full Page */
 body {
+    background-color: #ce4a1c;
+    
+}
+
+.mainbody {
     background-color: #fddca9;
     color: #562717;
-    margin: 2vw;
-    
+    width: 94vw;
+    height: 94vh;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
 }
 
 /* Top Nav/Name Bar */
 
 .topbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ce4a1c;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 2vw;
+    margin-right: 2vw;
 }
 
-nav {
-    padding: 0vh 1vw;
-    max-width: 100%
-}
-
-nav a {
-    padding: 1vw 5vh;
-    font-family: fiftiesmovies;
+.logo a {
+    font-family: amsterdamfour;
     font-size: 1.5rem;
     text-decoration: none;
-    color: #4e3b2b;
+    color: black;
+
 }
 
 .header {
     color:#562717;
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
+    text-decoration: underline;
+    grid-column: span 2 / span 2;
+}
+
+.button {
+    grid-column-start: 5;
+    margin-top: 1.5vh;
 }
 
 /* Content */
@@ -89,10 +105,8 @@ nav a {
 
 .modules img {
     max-height: 100%;
-    width: 25vw;
+    width: 20vw;
 }
-
-
 
 /* Dark Mode Styles */
 body.dark {
